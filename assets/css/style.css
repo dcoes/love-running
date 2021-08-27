@@ -63,6 +63,9 @@ letter-spacing: 4px;
     width: 100%;
     overflow: hidden;
 
+    /*This will keep this relative to the page, and helps center the overlay text way below.*/
+    position:relative;
+
 }
 
 #hero-image{
@@ -84,4 +87,35 @@ letter-spacing: 4px;
     to{
         transform: scale(1.1);
     }
+}
+
+/*ovverides h2 rule on overlay*/
+#cover-text, #cover-text h2{
+    color: #fff;
+}
+
+#cover-text{
+    font-size: 130%;
+    font-family: Oswald, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+
+    /*Width and Height of Div itself*/
+    width:300px;
+    height:200px;
+
+    padding-top: 40px;
+    padding-left: 10px;
+
+    /*TRANSPARENCY and color through rgba instead of just color.*/
+    background-color: rgba(241,109,107, .7);
+    /*rounded corners - my own touch*/
+    border-radius: 2%;
+
+    /*Fixed position relative to the parent*/
+    bottom: 30px;
+    right: 150px;
+
+    position:absolute;
+    /*Note that this is a child of hero-outer. so wee need to address the position on that. See above.*/
 }
