@@ -134,22 +134,21 @@ letter-spacing: 4px;
 #left-about{
     padding-top: 30px;
     width: 33%;
-    float:left;
-    background-color: blue;
+    float: left;
+
 }
 
 #right-about{
     padding-top: 30px;
     width: 33%;
-    float:right;
-    background-color: red;
+    float: right;
+
 }
 
 #center-about{
 /*This one's different it holds others in place (?), for that reason we use the margin auto*/
     width: 33%;
     margin:auto;
-    background-color: green;
 }
 
 .left-about-heading {
@@ -168,4 +167,35 @@ letter-spacing: 4px;
     line-height: 20px;
     clear:both;
     margin:50px;
+}
+
+.right-about-heading h2 {
+    text-align: right;
+}
+
+.right-about-heading p {
+    text-align: right;
+}
+
+.welcome {
+    text-align: center;
+}
+
+#circle-container {
+    width: 300px;
+    height: 300px;
+    padding: 30px;
+    border-style: solid;
+    border-color: #ccc;
+    border-width: 1px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+
+#circle-cover-bg{
+    background: url('../images/ethos-center-image.jpg') no-repeat center center;
+    /*without the height, the image won't show up.*/
+    height: 100%;
+    border-radius: 50%;
 }
