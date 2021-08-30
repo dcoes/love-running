@@ -337,4 +337,28 @@ footer {
         text-align: center;
         padding: 0 20px;
     }
+
+    /*This overrides times section for events so taht it is arranged vertically rather than horizontally.*/
+    #times > div {
+        width: 100%;
+        clear: both;
+        height: 150px;
+        padding: 0;
+    }
+
+    /*Adjusts gallery section*/
+    #photos {
+        column-count: 3;
+    }
+}
+
+
+/* For small screen sizes from 950px wide and down */
+@media screen and (max-width: 800px){
+
+    /*Adjusts gallery section*/
+    #photos {
+        column-count: 2;
+    }
+
 }
