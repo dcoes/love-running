@@ -199,3 +199,55 @@ letter-spacing: 4px;
     height: 100%;
     border-radius: 50%;
 }
+
+#times{
+    background-image: url('../images/dublin-city.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    overflow:hidden;
+}
+
+#times div {
+    color: #fafafa;
+    /*we need transparency. so we're using rgba values here.*/
+    backround-color: rgba(0, 0, 0, .6);
+    /*We're dividing 5 panels here, so give them 20% each.*/
+    width: 20%;
+    height: 300px;
+    float: left;
+    /*padding on frames. 30px for top, and 10 for the left.*/
+    padding: 30px, 0, 0, 10px;
+    /*Actual styling of the panels*/
+    text-align: center;
+    border: 2px solid white;
+    box-sizing: border-box;
+
+}
+
+#times h2 {
+    color:#fafafa;
+}
+
+footer {
+    height: 150px;
+}
+
+.social-networks {
+    /*Centers the group to horizontal center.*/
+    text-align: center;
+}
+
+.social-networks > li {
+    /*centers list to itself.*/
+    display: inline;
+}
+
+.social-networks i {
+    /*deals with separation and padding of social media elements.*/
+    font-size: 160%;
+    margin: 1%;
+    padding: 5%;
+    color: #3a3a3a;
+}
